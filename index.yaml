@@ -1,9 +1,41 @@
 apiVersion: v1
 entries:
+  app-pia-connector-ui:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2026-05-27T06:35:26.130262695Z"
+    description: A Helm chart for Kubernetes
+    digest: e44c2e71a27afc72ff440685c3a36bace70c1ca913c45f8ed63fb9e8c567ca2b
+    name: app-pia-connector-ui
+    type: application
+    urls:
+    - https://plataforma-de-innovacion-abierta.github.io/app-pia-espd-connector-charts/app-pia-connector-ui-0.2.3.tgz
+    version: 0.2.3
   edc-ui-umbrella:
   - apiVersion: v2
     appVersion: 0.5.4-alpha
-    created: "2026-05-15T04:11:51.775815894Z"
+    created: "2026-05-27T06:35:26.195495142Z"
+    dependencies:
+    - name: tractusx-connector
+      repository: file://../tractusx-connector
+      version: 0.5.4-patch.4
+    - name: app-pia-connector-ui
+      repository: file://../app-pia-connector-ui
+      version: 0.2.3
+    - condition: tractusx-connector.install.keycloak
+      name: keycloak
+      repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
+      version: 16.1.6
+    description: A Helm chart for EDC and EDC UI.
+    digest: 4a795e0714d7da953414b6bfbd5312e6c08e1ad10210128032c4764ba168bdc1
+    name: edc-ui-umbrella
+    type: application
+    urls:
+    - https://plataforma-de-innovacion-abierta.github.io/app-pia-espd-connector-charts/edc-ui-umbrella-0.5.5.tgz
+    version: 0.5.5
+  - apiVersion: v2
+    appVersion: 0.5.4-alpha
+    created: "2026-05-27T06:35:26.161180777Z"
     dependencies:
     - name: tractusx-connector
       repository: file://../tractusx-connector
@@ -22,4 +54,4 @@ entries:
     urls:
     - https://plataforma-de-innovacion-abierta.github.io/app-pia-espd-connector-charts/edc-ui-umbrella-0.5.4-patch.9.tgz
     version: 0.5.4-patch.9
-generated: "2026-05-15T04:11:51.757741303Z"
+generated: "2026-05-27T06:35:26.129151755Z"
