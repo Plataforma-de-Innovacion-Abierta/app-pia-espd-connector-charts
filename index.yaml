@@ -3,9 +3,9 @@ entries:
   app-pia-connector-ui:
   - apiVersion: v2
     appVersion: 0.32.33
-    created: "2026-05-28T08:18:06.630111633Z"
+    created: "2026-05-28T08:43:34.834090588Z"
     description: A Helm chart for Kubernetes
-    digest: ff383548d3d853be212f7583f15440a84c2c11bf9860686f2dfcd4b9424f9587
+    digest: 722d09d84c2d928688edb0ca11605ff16a3c54ac4dcab419ee9a3ae9424449c2
     name: app-pia-connector-ui
     type: application
     urls:
@@ -14,7 +14,7 @@ entries:
   edc-ui-umbrella:
   - apiVersion: v2
     appVersion: 0.5.4-alpha
-    created: "2026-05-28T08:18:06.690981373Z"
+    created: "2026-05-28T08:43:34.900250356Z"
     dependencies:
     - name: tractusx-connector
       repository: file://../tractusx-connector
@@ -27,7 +27,7 @@ entries:
       repository: https://raw.githubusercontent.com/bitnami/charts/archive-full-index/bitnami
       version: 16.1.6
     description: A Helm chart for EDC and EDC UI.
-    digest: ad41a43d26c8b01067e616b35faf59a5ee24339562908ce24769405e6bf76e8f
+    digest: 71212b529b7b7ae35353bb7c68550cbb4e1722fbea1933dd2a774f2c0c3a1127
     name: edc-ui-umbrella
     type: application
     urls:
@@ -35,7 +35,7 @@ entries:
     version: 0.5.6
   - apiVersion: v2
     appVersion: 0.5.4-alpha
-    created: "2026-05-28T08:18:06.673948891Z"
+    created: "2026-05-28T08:43:34.881785864Z"
     dependencies:
     - name: tractusx-connector
       repository: file://../tractusx-connector
@@ -56,7 +56,7 @@ entries:
     version: 0.5.5
   - apiVersion: v2
     appVersion: 0.5.4-alpha
-    created: "2026-05-28T08:18:06.649855377Z"
+    created: "2026-05-28T08:43:34.858728649Z"
     dependencies:
     - name: tractusx-connector
       repository: file://../tractusx-connector
@@ -77,8 +77,8 @@ entries:
     version: 0.5.4-patch.9
   tractusx-connector:
   - apiVersion: v2
-    appVersion: 5.4.6-0.2.23.4
-    created: "2026-05-28T08:18:06.70082863Z"
+    appVersion: 5.4.6-0.2.23.5
+    created: "2026-05-28T08:43:34.908925234Z"
     dependencies:
     - alias: vault
       condition: install.vault
@@ -95,7 +95,7 @@ entries:
       Note that _no_ external dependencies such as a PostgreSQL database and HashiCorp
       Vault are included.  This chart is intended for use with an _existing_ PostgreSQL
       database and an _existing_ HashiCorp Vault. '
-    digest: e0982955cfcb17bfa1771f5eb122b5747bb27e7c0fbd550be378280b405263c0
+    digest: 8194de89b9b229bd84fdf6636e6d16761eb92ebab37599237f3a223b3458bffc
     home: https://github.com/eclipse-tractusx/tractusx-edc/tree/main/charts/tractusx-connector
     name: tractusx-connector
     sources:
@@ -104,4 +104,4 @@ entries:
     urls:
     - https://plataforma-de-innovacion-abierta.github.io/app-pia-espd-connector-charts/tractusx-connector-0.5.4-patch.4.tgz
     version: 0.5.4-patch.4
-generated: "2026-05-28T08:18:06.629497567Z"
+generated: "2026-05-28T08:43:34.833082223Z"
